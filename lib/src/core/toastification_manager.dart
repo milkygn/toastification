@@ -67,9 +67,10 @@ class ToastificationManager {
       _createNotificationHolder(overlayState);
     }
 
-    scheduler.addPostFrameCallback((_) {
-      _addItemToList(item);
-    });
+     _addItemToList(item);
+    // scheduler.addPostFrameCallback((_) {
+     
+    // });
 
     return item;
   }
